@@ -48,7 +48,12 @@ public class Demo {
 
     private static void outQueue() {
         String peek = queue.poll();
-        System.out.println("病例号"+peek+"请去就诊");
+        if(peek!=null){
+            System.out.println("病例号"+peek+"请去就诊");
+        }else{
+            System.out.println("没有待就诊的病人");
+
+        }
     }
 
     private static void inQueue() {
